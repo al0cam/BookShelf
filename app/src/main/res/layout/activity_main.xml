@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.BookShelf.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.BookShelf.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+<!--    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:fab="http://schemas.android.com/apk/res-auto"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <ListView-->
+<!--            android:id="@+id/list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom">
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/mainPageFloatingAction"
+                fab:fab_label="@string/main_activity_mainPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home"
+                />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/settingsFloatingAction"
+                fab:fab_label="@string/main_activity_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings"
+                />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/shelfFloatingAction"
+                fab:fab_label="@string/main_activity_shelf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_shelf"
+                />
+<!--            <com.github.clans.fab.FloatingActionButton-->
+<!--                fab:fab_label="Read on"-->
+<!--                android:id="@+id/readBookFloatingAction"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_read_book"-->
+<!--                />-->
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bookmarksFloatingAction"
+                fab:fab_label="@string/main_activity_bookmarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bookmarks"
+                />
+            <com.github.clans.fab.FloatingActionButton
+                fab:fab_label="@string/main_activity_addBook"
+                android:id="@+id/addBookFloatingAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_book"
+                />
+        </com.github.clans.fab.FloatingActionMenu>
+<!--    </FrameLayout>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

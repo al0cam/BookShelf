@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MainPageFragment"
+    android:id="@+id/mainPageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_page_favouriteBook"
+            android:textSize="40dp"/>
+        <com.mendelu.fbe.bookshelf.customViews.BookView
+            android:id="@+id/favouriteBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_page_lastRead"
+            android:textSize="40dp"/>
+        <com.mendelu.fbe.bookshelf.customViews.BookView
+            android:id="@+id/lastAddedBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_page_lastBookmark"
+            android:textSize="40dp"/>
+        <com.mendelu.fbe.bookshelf.customViews.BookMarkView
+            android:id="@+id/lastBookmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BookShelf</string>
+    <string name="action_settings">Postavke</string>
+    <!-- Strings used for fragments for navigation -->
+    <!--    aad book fragment-->
+    <string name="add_book_fragment_bookName">Naziv knjige</string>
+    <string name="add_book_fragment_author">Autor</string>
+    <string name="add_book_fragment_path">Izaberite datoteku</string>
+    <string name="add_book_fragment_saveButton">Spremi</string>
+    <string name="add_book_fragment_loadFile">Ućitaj datoteku</string>
+
+    <!--    activity main-->
+    <string name="main_activity_mainPage">Naslovnica</string>
+    <string name="main_activity_settings">Postavke</string>
+    <string name="main_activity_shelf">Polica</string>
+    <string name="main_activity_bookmarks">Bookmarke</string>
+    <string name="main_activity_addBook">Dodaj knjigu</string>
+
+    <!--   add bookmark  -->
+    <string name="add_bookmark_bookmark">Text bookmarke</string>
+    <string name="add_bookmark_page">Stranica</string>
+    <string name="add_bookmark_saveButton">Spremi</string>
+
+    <!--    main page-->
+    <string name="main_page_favouriteBook">Najdraža knjiga</string>
+    <string name="main_page_lastRead">Zadnje čitanja knjiga</string>
+    <string name="main_page_lastBookmark">Zadnji bookmark</string>
+
+    <!--    row bookmark-->
+    <string name="row_bookmark_bookname">Unos knjige</string>
+    <string name="row_bookmark_deleteButton">Briši</string>
+
+    <!-- sample book view-->
+    <string name="sample_book_author">Unos knjige</string>
+    <string name="sample_book_bookname">Ime knjige</string>
+    <string name="sample_book_openButton">Otvori</string>
+
+
+    <!--    settings-->
+    <string name="settings_language">Jezik:</string>
+    <string name="settings_langEngButton">Engleski</string>
+    <string name="settings_langHrButton">Hrvatski</string>
+</resources>

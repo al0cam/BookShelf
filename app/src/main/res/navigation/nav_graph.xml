@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainPageFragment">
+
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.mendelu.fbe.bookshelf.fragments.MainPageFragment"
+        tools:layout="@layout/main_page_fragment">
+
+        <action
+            android:id="@+id/toMainPageFragment"
+            app:destination="@id/mainPageFragment"/>
+        <action
+            android:id="@+id/toShelfFragment"
+            app:destination="@id/shelfFragment"/>
+        <action
+            android:id="@+id/toReadBookFragment"
+            app:destination="@id/readBookFragment"/>
+        <action
+            android:id="@+id/toBookMarKFragment"
+            app:destination="@id/bookMarksFragment"/>
+        <action
+            android:id="@+id/toAddBookFragment"
+            app:destination="@id/addBookFragment"/>
+        <action
+            android:id="@+id/toSettingsFragment"
+            app:destination="@id/settingsFragment"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/addBookFragment"
+        android:name="com.mendelu.fbe.bookshelf.fragments.AddBookFragment"
+        tools:layout="@layout/add_book_fragment">
+
+        <action
+            android:id="@+id/toAddBookFragment"
+            app:destination="@id/addBookFragment"/>
+        <action
+            android:id="@+id/toMainPageFragment"
+            app:destination="@id/mainPageFragment"/>
+        <action
+            android:id="@+id/toShelfFragment"
+            app:destination="@id/shelfFragment"/>
+        <action
+            android:id="@+id/toBookMarKFragment"
+            app:destination="@id/bookMarksFragment"/>
+        <action
+            android:id="@+id/toSettingsFragment"
+            app:destination="@id/settingsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/readBookFragment"
+        android:name="com.mendelu.fbe.bookshelf.fragments.ReadBookFragment"
+        tools:layout="@layout/read_book_fragment">
+
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="-1L"/>
+
+        <action
+            android:id="@+id/toMainPageFragment"
+            app:destination="@id/mainPageFragment"/>
+        <action
+            android:id="@+id/toShelfFragment"
+            app:destination="@id/shelfFragment"/>
+        <action
+            android:id="@+id/toBookMarKFragment"
+            app:destination="@id/bookMarksFragment"/>
+        <action
+            android:id="@+id/toAddBookFragment"
+            app:destination="@id/addBookFragment"/>
+        <action
+            android:id="@+id/toSettingsFragment"
+            app:destination="@id/settingsFragment"/>
+        <action
+            android:id="@+id/toAddBookMark"
+            app:destination="@+id/addBookMarkFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.mendelu.fbe.bookshelf.fragments.SettingsFragment"
+        tools:layout="@layout/settings_fragment">
+
+        <action
+            android:id="@+id/toSettingsFragment"
+            app:destination="@id/settingsFragment"/>
+        <action
+            android:id="@+id/toMainPageFragment"
+            app:destination="@id/mainPageFragment"/>
+        <action
+            android:id="@+id/toShelfFragment"
+            app:destination="@id/shelfFragment"/>
+        <action
+            android:id="@+id/toBookMarKFragment"
+            app:destination="@id/bookMarksFragment"/>
+        <action
+            android:id="@+id/toAddBookFragment"
+            app:destination="@id/addBookFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookMarksFragment"
+        android:name="com.mendelu.fbe.bookshelf.fragments.BookMarksFragment"
+        tools:layout="@layout/book_marks_fragment">
+
+        <action
+            android:id="@+id/toBookMarKFragment"
+            app:destination="@id/bookMarksFragment"/>
+        <action
+            android:id="@+id/toMainPageFragment"
+            app:destination="@id/mainPageFragment"/>
+        <action
+            android:id="@+id/toShelfFragment"
+            app:destination="@id/shelfFragment"/>
+        <action
+            android:id="@+id/toAddBookFragment"
+            app:destination="@id/addBookFragment"/>
+        <action
+            android:id="@+id/toSettingsFragment"
+            app:destination="@id/settingsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/shelfFragment"
+        android:name="com.mendelu.fbe.bookshelf.fragments.ShelfFragment"
+        tools:layout="@layout/shelf_fragment">
+
+        <action
+            android:id="@+id/toShelfFragment"
+            app:destination="@id/shelfFragment"/>
+        <action
+            android:id="@+id/toMainPageFragment"
+            app:destination="@id/mainPageFragment"/>
+        <action
+            android:id="@+id/toReadBookFragment"
+            app:destination="@id/readBookFragment"/>
+        <action
+            android:id="@+id/toBookMarKFragment"
+            app:destination="@id/bookMarksFragment"/>
+        <action
+            android:id="@+id/toAddBookFragment"
+            app:destination="@id/addBookFragment"/>
+        <action
+            android:id="@+id/toSettingsFragment"
+            app:destination="@id/settingsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addBookMarkFragment"
+        android:name="com.mendelu.fbe.bookshelf.fragments.AddBookMarkFragment"
+        tools:layout="@layout/add_book_mark_fragment">
+
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="-1L"/>
+        <action
+            android:id="@+id/toShelfFragment"
+            app:destination="@id/shelfFragment"/>
+        <action
+            android:id="@+id/toMainPageFragment"
+            app:destination="@id/mainPageFragment"/>
+        <action
+            android:id="@+id/toBookMarKFragment"
+            app:destination="@id/bookMarksFragment"/>
+        <action
+            android:id="@+id/toAddBookFragment"
+            app:destination="@id/addBookFragment"/>
+        <action
+            android:id="@+id/toSettingsFragment"
+            app:destination="@id/settingsFragment"/>
+    </fragment>
+
+
+
+</navigation>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AddBookFragment"
+    android:id="@+id/addBookFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_book_fragment_bookName"
+            android:layout_margin="10dp"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/add_book_fragment_author"/>
+
+        <TextView
+            android:id="@+id/filePath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/add_book_fragment_path"/>
+
+        <Button
+            android:id="@+id/saveBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/add_book_fragment_saveButton"/>
+        <Button
+            android:id="@+id/loadFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/add_book_fragment_loadFile"/>
+    </LinearLayout>
+
+</FrameLayout>
